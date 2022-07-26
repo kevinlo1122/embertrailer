@@ -1,0 +1,17 @@
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\embertrailer_app.exe
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\embertrailer_app.deps.json
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\embertrailer_app.runtimeconfig.json
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\embertrailer_app.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\embertrailer_app.pdb
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.AssemblyReference.cache
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.Form1.resources
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.GenerateResource.cache
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.AssemblyInfoInputs.cache
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.AssemblyInfo.cs
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.CoreCompileInputs.cache
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\refint\embertrailer_app.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.pdb
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.genruntimeconfig.cache
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\ref\embertrailer_app.dll
