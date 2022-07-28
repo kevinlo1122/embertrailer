@@ -41,3 +41,12 @@ C:\Users\rdjau\Desktop\embertrailer-main\embertrailer-main\embertrailer_app\embe
 C:\Users\rdjau\Desktop\embertrailer-main\embertrailer-main\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.pdb
 C:\Users\rdjau\Desktop\embertrailer-main\embertrailer-main\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.genruntimeconfig.cache
 C:\Users\rdjau\Desktop\embertrailer-main\embertrailer-main\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\ref\embertrailer_app.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\System.IO.Ports.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\alfredr\Desktop\ENSC405W\code\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.CopyComplete
