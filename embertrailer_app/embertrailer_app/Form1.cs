@@ -5,7 +5,11 @@ namespace embertrailer_app
         Serial serialPort;
         Thread serialThread;
         Thread labelThread;
-        
+        string command = "/n";
+
+        bool IsWaterButtonClicked = false;
+        bool IsDrillButtonClicked = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -17,12 +21,12 @@ namespace embertrailer_app
             labelThread = new Thread(LabelUpdateThread);
             serialThread.Start();
             labelThread.Start();
+
+            // Read in data from serial port
             //serialPort.ReadData();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            // Write commands to serial port
+            //serialPort.WriteData(command);
         }
 
         // Take messages from the queue, will block if empty
@@ -45,6 +49,28 @@ namespace embertrailer_app
             {
                 labelTest.Text = msg;
             }
+        }
+
+        private void water_Click(object sender, EventArgs e)
+        {
+            IsWaterButtonClicked = !IsWaterButtonClicked;
+            command = IsWaterButtonClicked ? "startWater" : "stopWater";
+        }
+
+        private void drill_Click(object sender, EventArgs e)
+        {
+            IsDrillButtonClicked = !IsDrillButtonClicked;
+            command = IsDrillButtonClicked ? "startDrill" : "stopDrill"; // TODO: do we still want the drill to be cancellable?
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void history_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

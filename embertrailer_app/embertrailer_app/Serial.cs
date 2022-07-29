@@ -20,18 +20,38 @@ namespace embertrailer_app
          
         public void Connect()
         {
-            port.PortName = "COM6";
+            port.PortName = "COM6"; // Port that the Arduino is connected to on the PC (changes)
             port.BaudRate = 9600;
             port.Open();
             port.ReadExisting();
         }
 
+        // Reads data from the serial port (one line until the newline)
         public void ReadData()
         {   
             try
             {
                 string data = port.ReadLine();
+                //ParseData(data);
                 MessageBox.Show(data);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ParseData(string data)
+        {
+            // TODO: need to determine the format of the message being sent (preferable - CSV)
+        }
+
+        // Writes to serial port the command operator gives from the UI. If no command is given, the default newline is used
+        public void WriteData(string command = "/n")
+        {
+            try
+            {
+                port.WriteLine(command);
             }
             catch (Exception ex)
             {
