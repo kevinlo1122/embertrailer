@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,17 @@
             this.labelTest = new System.Windows.Forms.Label();
             this.water = new System.Windows.Forms.Button();
             this.drill = new System.Windows.Forms.Button();
+            this.severity5 = new System.Windows.Forms.PictureBox();
+            this.severity4 = new System.Windows.Forms.PictureBox();
+            this.severity3 = new System.Windows.Forms.PictureBox();
+            this.severity2 = new System.Windows.Forms.PictureBox();
+            this.severity1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.severity5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -159,12 +170,62 @@
             this.drill.UseVisualStyleBackColor = true;
             this.drill.Click += new System.EventHandler(this.drill_Click);
             // 
+            // severity5
+            // 
+            this.severity5.Image = ((System.Drawing.Image)(resources.GetObject("severity5.Image")));
+            this.severity5.Location = new System.Drawing.Point(99, 91);
+            this.severity5.Name = "severity5";
+            this.severity5.Size = new System.Drawing.Size(68, 68);
+            this.severity5.TabIndex = 7;
+            this.severity5.TabStop = false;
+            // 
+            // severity4
+            // 
+            this.severity4.Image = ((System.Drawing.Image)(resources.GetObject("severity4.Image")));
+            this.severity4.Location = new System.Drawing.Point(99, 187);
+            this.severity4.Name = "severity4";
+            this.severity4.Size = new System.Drawing.Size(68, 68);
+            this.severity4.TabIndex = 8;
+            this.severity4.TabStop = false;
+            // 
+            // severity3
+            // 
+            this.severity3.Image = ((System.Drawing.Image)(resources.GetObject("severity3.Image")));
+            this.severity3.Location = new System.Drawing.Point(99, 281);
+            this.severity3.Name = "severity3";
+            this.severity3.Size = new System.Drawing.Size(68, 68);
+            this.severity3.TabIndex = 9;
+            this.severity3.TabStop = false;
+            // 
+            // severity2
+            // 
+            this.severity2.Image = ((System.Drawing.Image)(resources.GetObject("severity2.Image")));
+            this.severity2.Location = new System.Drawing.Point(99, 371);
+            this.severity2.Name = "severity2";
+            this.severity2.Size = new System.Drawing.Size(68, 68);
+            this.severity2.TabIndex = 10;
+            this.severity2.TabStop = false;
+            // 
+            // severity1
+            // 
+            this.severity1.Image = ((System.Drawing.Image)(resources.GetObject("severity1.Image")));
+            this.severity1.Location = new System.Drawing.Point(99, 465);
+            this.severity1.Name = "severity1";
+            this.severity1.Size = new System.Drawing.Size(68, 68);
+            this.severity1.TabIndex = 11;
+            this.severity1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(975, 649);
+            this.Controls.Add(this.severity1);
+            this.Controls.Add(this.severity2);
+            this.Controls.Add(this.severity3);
+            this.Controls.Add(this.severity4);
+            this.Controls.Add(this.severity5);
             this.Controls.Add(this.drill);
             this.Controls.Add(this.water);
             this.Controls.Add(this.labelTest);
@@ -175,6 +236,11 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.severity5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.severity1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +258,10 @@
         private Label labelTest;
         private Button water;
         private Button drill;
+        private PictureBox severity5;
+        private PictureBox severity4;
+        private PictureBox severity3;
+        private PictureBox severity2;
+        private PictureBox severity1;
     }
 }

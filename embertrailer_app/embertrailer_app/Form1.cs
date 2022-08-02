@@ -47,6 +47,8 @@ namespace embertrailer_app
             }
             else
             {
+                // Parsing done here (hardcode the labels we want to update)
+                // ParseData(data);
                 labelTest.Text = msg;
             }
         }

@@ -20,7 +20,7 @@ namespace embertrailer_app
          
         public void Connect()
         {
-            port.PortName = "COM6"; // Port that the Arduino is connected to on the PC (changes)
+            port.PortName = "COM6"; 
             port.BaudRate = 9600;
             port.Open();
             port.ReadExisting();
@@ -32,7 +32,6 @@ namespace embertrailer_app
             try
             {
                 string data = port.ReadLine();
-                //ParseData(data);
                 MessageBox.Show(data);
             }
             catch (Exception ex)
@@ -41,7 +40,7 @@ namespace embertrailer_app
             }
         }
 
-        private void ParseData(string data)
+        public void ParseData(string data)
         {
             // TODO: need to determine the format of the message being sent (preferable - CSV)
         }
