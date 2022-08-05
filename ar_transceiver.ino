@@ -72,7 +72,10 @@ void loop()
       Serial.print("Received Message:  ");
       Serial.println((char*)recv_msg);
       delay(2000);
-      uint8_t send_msg[] = "TEST/test/123/EOT";
+      String msg = Serial.readStringUntil('\n');
+      uint8_t send_msg[msg.length()+1];
+      msg.getBytes(send_msg, msg.length()+1);
+//      uint8_t send_msg[] = "TEST/test/123/EOT";
       bxor(send_msg, send_msg, sizeof(send_msg), key);
       rf95_manager.sendtoWait(send_msg, sizeof(send_msg), destination);
     }

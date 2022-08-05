@@ -3,7 +3,8 @@ namespace embertrailer_app
     public partial class Form1 : Form
     {
         Serial serialPort;
-        Thread serialThread;
+        Thread receiveThread;
+        Thread sendThread;
         Thread labelThread;
         string command = "/n";
 
@@ -15,11 +16,13 @@ namespace embertrailer_app
             InitializeComponent();
 
             serialPort = new Serial();
-            //serialPort.Connect();
+            serialPort.Connect();
 
-            serialThread = new Thread(serialPort.ThreadTest);
+            receiveThread = new Thread(serialPort.ReadData);
+            sendThread = new Thread(serialPort.WriteData);
             labelThread = new Thread(LabelUpdateThread);
-            serialThread.Start();
+            receiveThread.Start();
+            sendThread.Start();
             labelThread.Start();
 
             // Read in data from serial port
@@ -32,9 +35,10 @@ namespace embertrailer_app
         // Take messages from the queue, will block if empty
         private void LabelUpdateThread()
         {
-            foreach (var msg in Serial.messages.GetConsumingEnumerable())
+            foreach (var msg in Serial.msgFromArduino.GetConsumingEnumerable())
             {
                 LabelUpdate(msg);
+                Serial.msgToArduino.Add("REPLY,TEST,");
             }
         }
 
