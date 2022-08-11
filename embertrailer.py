@@ -1,7 +1,5 @@
 # libraries and imports
-from ctypes import sizeof
 from time import sleep, monotonic
-from tokenize import String
 import board
 import busio
 import digitalio
@@ -102,7 +100,6 @@ while True:
 
         # format message
         send_message = format_send_message([ambient_temperature, humidity, air_quality, latitude, longitude, hotspot])
-        org = send_message
         # send message
         print("Send Message:     ", send_message.decode("UTF-8"))
         rfm9x.send_with_ack(data=bxor(send_message, key))
@@ -116,6 +113,4 @@ while True:
         print("Main Loop Error: ", error)
 
     sleep(1)
-
-
     
