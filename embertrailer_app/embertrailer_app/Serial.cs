@@ -40,6 +40,7 @@ namespace embertrailer_app
                 {
                     string data = port.ReadLine();
                     msgFromArduino.Add(data + i.ToString());
+                    //System.Console.WriteLine("RECEIVED: " + data + i.ToString());
                     i = i + 1;
                 }
                 catch (Exception ex)
@@ -53,11 +54,12 @@ namespace embertrailer_app
         public void WriteData()
         {
             int i = 0;
-            foreach (var msg in Serial.msgFromArduino.GetConsumingEnumerable())
+            foreach (var msg in Serial.msgToArduino.GetConsumingEnumerable())
             {
                 try
                 {
                     port.WriteLine(msg + i.ToString());
+                    //System.Console.WriteLine("REPLYING with: " + msg + i.ToString());
                     i = i + 1;
                 }
                 catch (Exception ex)

@@ -69,9 +69,9 @@ void loop()
       if (!recv_len) return;
       recv_buf[recv_len] = 0;
       bxor(recv_msg, recv_buf, recv_len, key);
-      Serial.print("Received Message:  ");
+//      Serial.print("Received Message:  ");
       Serial.println((char*)recv_msg);
-      delay(2000);
+//      delay(2000);
       String msg = Serial.readStringUntil('\n');
       uint8_t send_msg[msg.length()+1];
       msg.getBytes(send_msg, msg.length()+1);
@@ -79,5 +79,5 @@ void loop()
       bxor(send_msg, send_msg, sizeof(send_msg), key);
       rf95_manager.sendtoWait(send_msg, sizeof(send_msg), destination);
     }
-    delay(2000);
+//    delay(2000);
 }
