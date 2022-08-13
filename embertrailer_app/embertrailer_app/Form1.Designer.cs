@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.history = new System.Windows.Forms.Button();
             this.help = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.labelTest = new System.Windows.Forms.Label();
             this.water = new System.Windows.Forms.Button();
             this.drill = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.severity3 = new System.Windows.Forms.PictureBox();
             this.severity2 = new System.Windows.Forms.PictureBox();
             this.severity1 = new System.Windows.Forms.PictureBox();
+            this.severity = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.severity5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity4)).BeginInit();
@@ -62,20 +62,19 @@
             this.panel1.Controls.Add(this.history);
             this.panel1.Controls.Add(this.help);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(989, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(791, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 811);
+            this.panel1.Size = new System.Drawing.Size(184, 649);
             this.panel1.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 61);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(46, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 25);
+            this.label4.Size = new System.Drawing.Size(90, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Connectivity";
             // 
@@ -83,10 +82,9 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 154);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(45, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.Size = new System.Drawing.Size(94, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Battery Level";
             // 
@@ -94,10 +92,9 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 260);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(19, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 25);
+            this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Internal Temperature";
             // 
@@ -105,20 +102,18 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 369);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(58, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Location";
             // 
             // history
             // 
             this.history.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.history.Location = new System.Drawing.Point(56, 510);
-            this.history.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.history.Location = new System.Drawing.Point(45, 408);
             this.history.Name = "history";
-            this.history.Size = new System.Drawing.Size(118, 36);
+            this.history.Size = new System.Drawing.Size(94, 29);
             this.history.TabIndex = 1;
             this.history.Text = "History";
             this.history.UseVisualStyleBackColor = true;
@@ -127,42 +122,29 @@
             // help
             // 
             this.help.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.help.Location = new System.Drawing.Point(56, 654);
-            this.help.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.help.Location = new System.Drawing.Point(45, 523);
             this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(118, 36);
+            this.help.Size = new System.Drawing.Size(94, 29);
             this.help.TabIndex = 0;
             this.help.Text = "Help";
             this.help.UseVisualStyleBackColor = true;
             this.help.Click += new System.EventHandler(this.help_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(438, 271);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 25);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "PROBE";
-            // 
             // labelTest
             // 
             this.labelTest.AutoSize = true;
-            this.labelTest.Location = new System.Drawing.Point(275, 464);
-            this.labelTest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTest.Location = new System.Drawing.Point(220, 371);
             this.labelTest.Name = "labelTest";
-            this.labelTest.Size = new System.Drawing.Size(66, 25);
+            this.labelTest.Size = new System.Drawing.Size(54, 20);
             this.labelTest.TabIndex = 4;
             this.labelTest.Text = "testing";
             // 
             // water
             // 
             this.water.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.water.Location = new System.Drawing.Point(555, 606);
-            this.water.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.water.Location = new System.Drawing.Point(444, 485);
             this.water.Name = "water";
-            this.water.Size = new System.Drawing.Size(118, 36);
+            this.water.Size = new System.Drawing.Size(94, 29);
             this.water.TabIndex = 5;
             this.water.Text = "Water";
             this.water.UseVisualStyleBackColor = true;
@@ -171,10 +153,9 @@
             // drill
             // 
             this.drill.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.drill.Location = new System.Drawing.Point(770, 608);
-            this.drill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.drill.Location = new System.Drawing.Point(608, 485);
             this.drill.Name = "drill";
-            this.drill.Size = new System.Drawing.Size(118, 36);
+            this.drill.Size = new System.Drawing.Size(94, 29);
             this.drill.TabIndex = 6;
             this.drill.Text = "Drill";
             this.drill.UseVisualStyleBackColor = true;
@@ -183,59 +164,65 @@
             // severity5
             // 
             this.severity5.Image = ((System.Drawing.Image)(resources.GetObject("severity5.Image")));
-            this.severity5.Location = new System.Drawing.Point(124, 114);
-            this.severity5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.severity5.Location = new System.Drawing.Point(99, 91);
             this.severity5.Name = "severity5";
-            this.severity5.Size = new System.Drawing.Size(85, 85);
+            this.severity5.Size = new System.Drawing.Size(68, 68);
             this.severity5.TabIndex = 7;
             this.severity5.TabStop = false;
             // 
             // severity4
             // 
             this.severity4.Image = ((System.Drawing.Image)(resources.GetObject("severity4.Image")));
-            this.severity4.Location = new System.Drawing.Point(124, 234);
-            this.severity4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.severity4.Location = new System.Drawing.Point(99, 187);
             this.severity4.Name = "severity4";
-            this.severity4.Size = new System.Drawing.Size(85, 85);
+            this.severity4.Size = new System.Drawing.Size(68, 68);
             this.severity4.TabIndex = 8;
             this.severity4.TabStop = false;
             // 
             // severity3
             // 
             this.severity3.Image = ((System.Drawing.Image)(resources.GetObject("severity3.Image")));
-            this.severity3.Location = new System.Drawing.Point(124, 351);
-            this.severity3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.severity3.Location = new System.Drawing.Point(99, 281);
             this.severity3.Name = "severity3";
-            this.severity3.Size = new System.Drawing.Size(85, 85);
+            this.severity3.Size = new System.Drawing.Size(68, 68);
             this.severity3.TabIndex = 9;
             this.severity3.TabStop = false;
             // 
             // severity2
             // 
             this.severity2.Image = ((System.Drawing.Image)(resources.GetObject("severity2.Image")));
-            this.severity2.Location = new System.Drawing.Point(124, 464);
-            this.severity2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.severity2.Location = new System.Drawing.Point(99, 371);
             this.severity2.Name = "severity2";
-            this.severity2.Size = new System.Drawing.Size(85, 85);
+            this.severity2.Size = new System.Drawing.Size(68, 68);
             this.severity2.TabIndex = 10;
             this.severity2.TabStop = false;
             // 
             // severity1
             // 
             this.severity1.Image = ((System.Drawing.Image)(resources.GetObject("severity1.Image")));
-            this.severity1.Location = new System.Drawing.Point(124, 581);
-            this.severity1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.severity1.Location = new System.Drawing.Point(99, 465);
             this.severity1.Name = "severity1";
-            this.severity1.Size = new System.Drawing.Size(85, 85);
+            this.severity1.Size = new System.Drawing.Size(68, 68);
             this.severity1.TabIndex = 11;
             this.severity1.TabStop = false;
             // 
+            // severity
+            // 
+            this.severity.AutoSize = true;
+            this.severity.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.severity.Location = new System.Drawing.Point(72, 28);
+            this.severity.Name = "severity";
+            this.severity.Size = new System.Drawing.Size(138, 46);
+            this.severity.TabIndex = 12;
+            this.severity.Text = "Severity";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1219, 811);
+            this.ClientSize = new System.Drawing.Size(975, 649);
+            this.Controls.Add(this.severity);
             this.Controls.Add(this.severity1);
             this.Controls.Add(this.severity2);
             this.Controls.Add(this.severity3);
@@ -244,9 +231,8 @@
             this.Controls.Add(this.drill);
             this.Controls.Add(this.water);
             this.Controls.Add(this.labelTest);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -269,7 +255,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label labelTest;
         private Button water;
         private Button drill;
@@ -278,5 +263,6 @@
         private PictureBox severity3;
         private PictureBox severity2;
         private PictureBox severity1;
+        private Label severity;
     }
 }

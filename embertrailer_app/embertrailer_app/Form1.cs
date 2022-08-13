@@ -8,6 +8,8 @@ namespace embertrailer_app
         Thread labelThread;
         string command = "/n";
 
+        string[] dataArray = new string[6];
+
         bool IsWaterButtonClicked = false;
         bool IsDrillButtonClicked = false;
 
@@ -52,8 +54,22 @@ namespace embertrailer_app
             else
             {
                 // Parsing done here (hardcode the labels we want to update)
-                // ParseData(data);
+                // ParseData(msg);
                 labelTest.Text = msg;
+            }
+        }
+
+        public void ParseData(string data)
+        {
+            int i = 0;
+            int index = 0;
+            
+            while(i < dataArray.Length)
+            {
+                index = data.IndexOf(','); // finds the index of the first comma in the data string
+                dataArray[i] = data.Substring(0, index); // stores the first data value into the dataArray
+                data = data[(index + 1)..]; // range operator .. gets the string starting from index + 1 until the end
+                i++; // repeat the process with the substring (minus the data retrieved)
             }
         }
 

@@ -68,10 +68,5 @@ namespace embertrailer_app
                 }
             }
         }
-
-        public void ParseData(string data)
-        {
-            // TODO: need to determine the format of the message being sent (preferable - CSV)
-        }
     }
 }
