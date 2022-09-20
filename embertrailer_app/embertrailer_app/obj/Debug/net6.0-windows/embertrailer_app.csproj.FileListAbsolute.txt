@@ -64,7 +64,6 @@ C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\b
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.AssemblyReference.cache
-C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.Form1.resources
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.Properties.Resources.resources
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.csproj.GenerateResource.cache
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.GeneratedMSBuildEditorConfig.editorconfig
@@ -77,3 +76,4 @@ C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\o
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.pdb
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.genruntimeconfig.cache
 C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\ref\embertrailer_app.dll
+C:\Users\ar0d9\Desktop\ENSC405W\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.EmberTrailer.resources

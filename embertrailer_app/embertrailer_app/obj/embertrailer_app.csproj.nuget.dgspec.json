@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj": {}
+    "C:\\Users\\ar0d9\\Desktop\\ENSC405W\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj": {
+    "C:\\Users\\ar0d9\\Desktop\\ENSC405W\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+        "projectUniqueName": "C:\\Users\\ar0d9\\Desktop\\ENSC405W\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
         "projectName": "embertrailer_app",
-        "projectPath": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
-        "packagesPath": "C:\\Users\\rdjau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\obj\\",
+        "projectPath": "C:\\Users\\ar0d9\\Desktop\\ENSC405W\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+        "packagesPath": "C:\\Users\\ar0d9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ar0d9\\Desktop\\ENSC405W\\embertrailer\\embertrailer_app\\embertrailer_app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rdjau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ar0d9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

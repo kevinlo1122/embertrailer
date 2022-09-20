@@ -33,15 +33,13 @@ namespace embertrailer_app
         // Reads data from the serial port (one line until the newline)
         public void ReadData()
         {
-            int i = 0;
             while (true)
             {
                 try
                 {
                     string data = port.ReadLine();
-                    msgFromArduino.Add(data + i.ToString());
-                    //System.Console.WriteLine("RECEIVED: " + data + i.ToString());
-                    i = i + 1;
+                    msgFromArduino.Add(data);
+                    //System.Console.WriteLine("RECEIVED: " + data);
                 }
                 catch (Exception ex)
                 {
@@ -53,14 +51,11 @@ namespace embertrailer_app
         // Writes to serial port the command operator gives from the UI. If no command is given, the default newline is used
         public void WriteData()
         {
-            int i = 0;
             foreach (var msg in Serial.msgToArduino.GetConsumingEnumerable())
             {
                 try
                 {
-                    port.WriteLine(msg + i.ToString());
-                    //System.Console.WriteLine("REPLYING with: " + msg + i.ToString());
-                    i = i + 1;
+                    port.WriteLine(msg);
                 }
                 catch (Exception ex)
                 {
