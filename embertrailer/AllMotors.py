@@ -39,7 +39,7 @@ GPIO.output(in3,GPIO.LOW)
 GPIO.output(in4,GPIO.LOW)
 #set speed
 p1=GPIO.PWM(enB,1000)
-p1.start(25)
+p1.start(100)
  
 
 #######################################################################################
@@ -127,26 +127,28 @@ while(1):
         GPIO.output(DIR,CW)
 
         # Run for 6400 steps. This will change based on how you set you controller
-        for x in range(6400):
+        for y in range(3):
+            for x in range(6400):
 
-            # Set one coil winding to high
-            GPIO.output(STEP,GPIO.HIGH)
-            # Allow it to get there.
-            sleep(.00005) # Dictates how fast stepper motor will run
-            # Set coil winding to low
-            GPIO.output(STEP,GPIO.LOW)
-            sleep(.00005) # Dictates how fast stepper motor will run            
-        x='z' 
+                # Set one coil winding to high
+                GPIO.output(STEP,GPIO.HIGH)
+                # Allow it to get there.
+                sleep(.00005) # Dictates how fast stepper motor will run
+                # Set coil winding to low
+                GPIO.output(STEP,GPIO.LOW)
+                sleep(.00005) # Dictates how fast stepper motor will run            
+        x='z'
 
     elif x=='lu':
         print("Linear Actuator up")
         sleep(1.0)
         GPIO.output(DIR,CCW)
-        for x in range(6400):
-            GPIO.output(STEP,GPIO.HIGH)
-            sleep(.00005)
-            GPIO.output(STEP,GPIO.LOW)
-            sleep(.00005)
+        for y in range(3):
+            for x in range(6400):
+                GPIO.output(STEP,GPIO.HIGH)
+                sleep(.00005)
+                GPIO.output(STEP,GPIO.LOW)
+                sleep(.00005)
         x='z'         
 
     #stop program

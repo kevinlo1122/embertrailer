@@ -5,6 +5,7 @@ import subprocess
 import busio
 import digitalio
 import serial
+import ast
 
 import adafruit_dht
 import adafruit_mcp3xxx.mcp3008 as MCP
@@ -101,41 +102,37 @@ while True:
 while True:
     try:
         # get sensor data
-        status = 'normal'
         ambient_temperature, humidity = get_dht(dht)
         air_quality = get_mq135(channel_0)
         latitude, longitude = get_featherwing(gps, last_print)
+        latitude, longitude = None, None
         matrix, hotspot = get_amg8333(amg)
         probe_temperature = get_max6675(thermocouple)
 
-
-        # events (to be implemented)
-        if air_quality > 80:            # too much smoke
-            pass
-        if ambient_temperature > 80:    # internal temperature too high
-            pass
-        if humidity > 95:               # internal humidity too high
-            pass
-
-
-        if hotspot > 50:                # warm spot on the ground
-            if hotspot > 70:            # surface hotspot
-                subprocess.run(['python3', 'motor_control.py', 's'])
-                status = 'supressing'
-            else:                       # underground hotspot
-                pass                    # further actions like drilling, how long to drill for, how far to move linear actuator, etc.
-            
-
         # format message
-        send_message = format_send_message([latitude, longitude, ambient_temperature, humidity, air_quality, hotspot, status])
+        send_message = format_send_message([latitude, longitude, ambient_temperature, humidity, air_quality, hotspot, probe_temperature])
 
         # send message
         print("Send Message:     ", send_message.decode("UTF-8"))
+        sleep(1)
         rfm9x.send_with_ack(data=bxor(send_message, key))
 
-        # receive message
+        # # receive message
+        received_message = None
         received_message = bxor(rfm9x.receive(with_ack=True), key)
         print("Received Message: ", received_message.decode("UTF-8"))
+
+        # received commands
+        if received_message == None:
+            sleep(1)
+        elif str(received_message.decode("UTF-8")) == 's\x00':
+            subprocess.run(['python3', 'motor_control.py', 's'])
+        elif str(received_message.decode("UTF-8")) == 'ld\x00':
+            subprocess.run(['python3', 'motor_control.py', 'ld'])
+        elif str(received_message.decode("UTF-8")) == 'lu\x00':
+            subprocess.run(['python3', 'motor_control.py', 'lu'])
+        else:
+            sleep(1)
 
 
     except Exception as error:
@@ -143,5 +140,3 @@ while True:
 
     except KeyboardInterrupt:
         exit(1)
-
-    sleep(1)
