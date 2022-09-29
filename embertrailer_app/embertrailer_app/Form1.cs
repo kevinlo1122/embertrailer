@@ -18,7 +18,7 @@ namespace embertrailer_app
             InitializeComponent();
 
             serialPort = new Serial();
-            serialPort.Connect();
+            //serialPort.Connect();
 
             receiveThread = new Thread(serialPort.ReadData);
             sendThread = new Thread(serialPort.WriteData);

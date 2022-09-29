@@ -45,12 +45,19 @@
             this.severity2 = new System.Windows.Forms.PictureBox();
             this.severity1 = new System.Windows.Forms.PictureBox();
             this.severity = new System.Windows.Forms.Label();
+            this.inactiveSeverity = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.severity5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inactiveSeverity)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -216,12 +223,87 @@
             this.severity.TabIndex = 12;
             this.severity.Text = "Severity";
             // 
+            // inactiveSeverity
+            // 
+            this.inactiveSeverity.Image = ((System.Drawing.Image)(resources.GetObject("inactiveSeverity.Image")));
+            this.inactiveSeverity.Location = new System.Drawing.Point(206, 91);
+            this.inactiveSeverity.Name = "inactiveSeverity";
+            this.inactiveSeverity.Size = new System.Drawing.Size(68, 68);
+            this.inactiveSeverity.TabIndex = 13;
+            this.inactiveSeverity.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Red;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(115, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 46);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "5";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Orange;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(115, 199);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 46);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "4";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Yellow;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(115, 293);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 46);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "3";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(115, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 46);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "2";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Lime;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(115, 477);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 46);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(975, 649);
+            this.Controls.Add(this.inactiveSeverity);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.severity);
             this.Controls.Add(this.severity1);
             this.Controls.Add(this.severity2);
@@ -242,6 +324,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.severity3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.severity1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inactiveSeverity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +347,11 @@
         private PictureBox severity2;
         private PictureBox severity1;
         private Label severity;
+        private PictureBox inactiveSeverity;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
     }
 }

@@ -79,7 +79,29 @@ namespace embertrailer_app
                     LabelUpdate(labelProbeTempValue, "n/a");
                 else
                     LabelUpdate(labelProbeTempValue, dataArray[6]);
-                
+
+                // activate the correct severity level
+                /*switch(dataArray[#])
+                {
+                    case 5:
+                        // severity level 5
+                        // TODO: set inactiveSeverity5 (grey circle) invisible
+                        break;
+                    case 4:
+                        // severity level 4
+                        break;
+                    case 3:
+                        // severity level 3
+                        break;
+                    case 2:
+                        // severity level 2
+                        break;
+                    case 1:
+                        // severity level 1
+                        break;
+                }*/
+
+
                 Serial.msgToArduino.Add("REPLY");
             }
         }
