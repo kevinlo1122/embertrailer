@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "9qw4AQHG4YUKQ3XNPmrFyL+eSK96g9Ns8nz9fQEWatLIUMG9nrN01xhmKci8FtT/wiQA1Y0sCl3BbMio1X3HIw==",
+  "dgSpecHash": "0vVEwei9gFAEWa0BjCQY9W2MKPWpga3fbBM6dz604zRXZYuYlHWg0IEeqdZXuyua6xLjZxLpwcIrVOZH7vCjRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+  "projectFilePath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.native.system.io.ports\\6.0.0\\runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "C:\\Users\\rdjau\\.nuget\\packages\\system.io.ports\\6.0.0\\system.io.ports.6.0.0.nupkg.sha512"
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.native.system.io.ports\\6.0.0\\runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\system.io.ports\\6.0.0\\system.io.ports.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

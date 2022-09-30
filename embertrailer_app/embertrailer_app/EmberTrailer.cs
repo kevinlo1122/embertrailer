@@ -27,10 +27,10 @@ namespace embertrailer_app
 
             receiveThread = new Thread(serialPort.ReadData);
             sendThread = new Thread(serialPort.WriteData);
-            labelThread = new Thread(LabelUpdateThread);
+            //labelThread = new Thread(LabelUpdateThread);
             receiveThread.Start();
             sendThread.Start();
-            labelThread.Start();
+            //labelThread.Start();
 
         }
 
