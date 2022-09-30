@@ -63,14 +63,10 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Ports.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.IO.Ports.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Ports.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -224,27 +220,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rdjau\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\songx\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+      "projectUniqueName": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
       "projectName": "embertrailer_app",
-      "projectPath": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
-      "packagesPath": "C:\\Users\\rdjau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rdjau\\Desktop\\embertrailer-main\\embertrailer-main\\embertrailer_app\\embertrailer_app\\obj\\",
+      "projectPath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+      "packagesPath": "C:\\Users\\songx\\.nuget\\packages\\",
+      "outputPath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rdjau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\songx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -277,8 +274,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -290,7 +286,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
