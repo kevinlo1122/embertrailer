@@ -144,3 +144,10 @@ C:\Users\songx\OneDrive\Documents\Programming\GitRepo\embertrailer\embertrailer_
 C:\Users\songx\OneDrive\Documents\Programming\GitRepo\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\songx\OneDrive\Documents\Programming\GitRepo\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\songx\OneDrive\Documents\Programming\GitRepo\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.CreateAccount.resources

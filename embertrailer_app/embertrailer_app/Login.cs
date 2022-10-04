@@ -52,7 +52,7 @@ namespace embertrailer_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\songx\\OneDrive\\Documents\\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'", usersDB);
             DataTable table = new DataTable();
             dataAdapter.Fill(table);

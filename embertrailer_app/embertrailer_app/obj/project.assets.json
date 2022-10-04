@@ -18,14 +18,10 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -136,14 +132,10 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -162,14 +154,10 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Ports.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.IO.Ports.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Ports.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -192,14 +180,10 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -211,14 +195,10 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp3.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -683,23 +663,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\songx\\.nuget\\packages\\": {}
+    "C:\\Users\\songx\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\songx\\OneDrive\\Documents\\Programming\\GitRepo\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+      "projectUniqueName": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
       "projectName": "embertrailer_app",
-      "projectPath": "C:\\Users\\songx\\OneDrive\\Documents\\Programming\\GitRepo\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+      "projectPath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
       "packagesPath": "C:\\Users\\songx\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\songx\\OneDrive\\Documents\\Programming\\GitRepo\\embertrailer\\embertrailer_app\\embertrailer_app\\obj\\",
+      "outputPath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\songx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -736,8 +721,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -749,7 +733,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
