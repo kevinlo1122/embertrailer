@@ -16,5 +16,10 @@ namespace embertrailer_app
         {
             InitializeComponent();
         }
+
+        private void CreateAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

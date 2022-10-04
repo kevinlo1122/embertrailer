@@ -20,14 +20,14 @@ namespace embertrailer_app
         {
             port = new SerialPort();
         }
-         
+
         // Establish connection to specified port
         public void Connect()
         {
-            port.PortName = "COM4"; 
-            port.BaudRate = 9600;
-            port.Open();
-            port.ReadExisting();
+            //port.PortName = "COM4";
+            //port.BaudRate = 9600;
+            //port.Open();
+            //port.ReadExisting();
         }
 
         // Reads data from the serial port (one line until the newline)

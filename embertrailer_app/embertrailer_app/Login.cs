@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace embertrailer_app
 {
     public partial class Login : Form
     {
+        private object sqlConnection;
+
         public Login()
         {
             InitializeComponent();
@@ -49,12 +52,32 @@ namespace embertrailer_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\songx\\OneDrive\\Documents\\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'", usersDB);
+            DataTable table = new DataTable();
+            dataAdapter.Fill(table);
+
+            if (table.Rows[0][0].ToString() == "1")
+            {
+                this.Hide();
+                EmberTrailer controlPanel = new EmberTrailer();
+                controlPanel.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please check your username or password");
+            }
 
         }
 
         private void signInArea_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

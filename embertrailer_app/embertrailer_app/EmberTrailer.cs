@@ -149,5 +149,10 @@ namespace embertrailer_app
         {
             //
         }
+
+        private void EmberTrailer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
