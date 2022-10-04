@@ -52,6 +52,17 @@ namespace embertrailer_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+			// *** Cautious ***//
+            // Please read ALL instructions below before running the program
+
+            // Create a connection between the backend program and the database 
+            // The connection path must be modified for every time of program running
+            
+            // Ctrl + Alt + S to open the Server Explorer
+            // Right click the .mdf file
+            // Select Properties
+            // Copy Connection String to acquire the accessibility of the database
+			
             SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\songx\OneDrive\Documents\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'", usersDB);
             DataTable table = new DataTable();
