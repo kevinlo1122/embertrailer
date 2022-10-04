@@ -103,6 +103,7 @@
             this.lklblBack2Login.TabIndex = 7;
             this.lklblBack2Login.TabStop = true;
             this.lklblBack2Login.Text = "BACK TO LOGIN";
+            this.lklblBack2Login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklblBack2Login_LinkClicked);
             // 
             // btnRgr
             // 
@@ -117,6 +118,7 @@
             this.btnRgr.TabIndex = 4;
             this.btnRgr.Text = "REGISTER";
             this.btnRgr.UseVisualStyleBackColor = false;
+            this.btnRgr.Click += new System.EventHandler(this.btnRgr_Click);
             // 
             // boxPassword
             // 
@@ -147,6 +149,7 @@
             this.boxUsername.Name = "boxUsername";
             this.boxUsername.Size = new System.Drawing.Size(1175, 47);
             this.boxUsername.TabIndex = 1;
+            this.boxUsername.TextChanged += new System.EventHandler(this.boxUsername_TextChanged);
             // 
             // lblUsername
             // 

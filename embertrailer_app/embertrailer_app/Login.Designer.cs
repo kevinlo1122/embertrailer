@@ -84,6 +84,7 @@
             this.lklblCreateAccount.TabIndex = 7;
             this.lklblCreateAccount.TabStop = true;
             this.lklblCreateAccount.Text = "CREATE ONE";
+            this.lklblCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklblCreateAccount_LinkClicked);
             // 
             // lblCreateAccount
             // 

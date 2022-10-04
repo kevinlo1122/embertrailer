@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5UToyLE+co5z1ST8D+REpmrjhK6iauULOr/NnmWhxMU9wJKw2mcobLrylCvEBCgV+aWbUD8hKrLhchvGq6DhZA==",
+  "dgSpecHash": "LlETvp8ISUKT0utn50sUdJ3HdfVXo02xmeBJju1eqhWlKaY7GFpHvLtKZhOA070qAv5duBSyIbTZnRey8lLbDw==",
   "success": true,
-  "projectFilePath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
+  "projectFilePath": "C:\\Users\\songx\\OneDrive\\Documents\\Programming\\GitRepo\\EmberTrailer2\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\songx\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\songx\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
