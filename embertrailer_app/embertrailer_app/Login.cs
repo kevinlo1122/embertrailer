@@ -22,7 +22,8 @@ namespace embertrailer_app
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            boxPassword.UseSystemPasswordChar = true;
+            btnShowPwd.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace embertrailer_app
             // Select Properties
             // Copy Connection String to acquire the accessibility of the database
 			
-            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\songx\OneDrive\Documents\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'", usersDB);
             DataTable table = new DataTable();
             dataAdapter.Fill(table);
@@ -96,6 +97,18 @@ namespace embertrailer_app
             this.Hide();
             CreateAccount createAccPage = new CreateAccount();  
             createAccPage.Show();
+        }
+
+        private void btnShowPwd_Click(object sender, EventArgs e)
+        {
+            boxPassword.UseSystemPasswordChar = false;
+            btnHidePwd.BringToFront();
+        }
+
+        private void btnHidePwd_Click(object sender, EventArgs e)
+        {
+            boxPassword.UseSystemPasswordChar = true;
+            btnShowPwd.BringToFront();
         }
     }
 }

@@ -33,7 +33,7 @@ namespace embertrailer_app
             {
                 // *** VERY IMPORTANT *** //
                 // Connection string must be modified base on different file directory before each running of the program
-                string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\songx\OneDrive\Documents\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;";
+                string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;";
                 using (SqlConnection toUSERS = new SqlConnection(connString))
                 {
                     toUSERS.Open();
