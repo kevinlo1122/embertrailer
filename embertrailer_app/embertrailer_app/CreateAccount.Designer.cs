@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAccount));
             this.logo = new System.Windows.Forms.PictureBox();
             this.RegisterArea = new System.Windows.Forms.Panel();
+            this.btnHidePwd = new System.Windows.Forms.Button();
+            this.btnShowPwd = new System.Windows.Forms.Button();
+            this.picNotAvailable = new System.Windows.Forms.PictureBox();
+            this.picAvailable = new System.Windows.Forms.PictureBox();
+            this.btnChkAvai = new System.Windows.Forms.Button();
             this.boxCheckPwd = new System.Windows.Forms.TextBox();
             this.lblConfirm = new System.Windows.Forms.Label();
             this.lklblBack2Login = new System.Windows.Forms.LinkLabel();
@@ -41,6 +46,8 @@
             this.lblUsername = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.RegisterArea.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNotAvailable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
@@ -56,6 +63,11 @@
             // RegisterArea
             // 
             this.RegisterArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(248)))), ((int)(((byte)(127)))));
+            this.RegisterArea.Controls.Add(this.btnHidePwd);
+            this.RegisterArea.Controls.Add(this.btnShowPwd);
+            this.RegisterArea.Controls.Add(this.picNotAvailable);
+            this.RegisterArea.Controls.Add(this.picAvailable);
+            this.RegisterArea.Controls.Add(this.btnChkAvai);
             this.RegisterArea.Controls.Add(this.boxCheckPwd);
             this.RegisterArea.Controls.Add(this.lblConfirm);
             this.RegisterArea.Controls.Add(this.lklblBack2Login);
@@ -68,6 +80,59 @@
             this.RegisterArea.Name = "RegisterArea";
             this.RegisterArea.Size = new System.Drawing.Size(608, 368);
             this.RegisterArea.TabIndex = 2;
+            // 
+            // btnHidePwd
+            // 
+            this.btnHidePwd.Image = global::embertrailer_app.Properties.Resources.hide;
+            this.btnHidePwd.Location = new System.Drawing.Point(524, 122);
+            this.btnHidePwd.Name = "btnHidePwd";
+            this.btnHidePwd.Size = new System.Drawing.Size(23, 23);
+            this.btnHidePwd.TabIndex = 12;
+            this.btnHidePwd.UseVisualStyleBackColor = true;
+            this.btnHidePwd.Click += new System.EventHandler(this.btnHidePwd_Click);
+            // 
+            // btnShowPwd
+            // 
+            this.btnShowPwd.Image = global::embertrailer_app.Properties.Resources.visible;
+            this.btnShowPwd.Location = new System.Drawing.Point(524, 122);
+            this.btnShowPwd.Name = "btnShowPwd";
+            this.btnShowPwd.Size = new System.Drawing.Size(23, 23);
+            this.btnShowPwd.TabIndex = 11;
+            this.btnShowPwd.UseVisualStyleBackColor = true;
+            this.btnShowPwd.Click += new System.EventHandler(this.btnShowPwd_Click);
+            // 
+            // picNotAvailable
+            // 
+            this.picNotAvailable.Image = global::embertrailer_app.Properties.Resources.no_user;
+            this.picNotAvailable.Location = new System.Drawing.Point(553, 63);
+            this.picNotAvailable.Name = "picNotAvailable";
+            this.picNotAvailable.Size = new System.Drawing.Size(23, 23);
+            this.picNotAvailable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNotAvailable.TabIndex = 10;
+            this.picNotAvailable.TabStop = false;
+            this.picNotAvailable.Visible = false;
+            // 
+            // picAvailable
+            // 
+            this.picAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(248)))), ((int)(((byte)(127)))));
+            this.picAvailable.Image = global::embertrailer_app.Properties.Resources.check_male1;
+            this.picAvailable.Location = new System.Drawing.Point(553, 63);
+            this.picAvailable.Name = "picAvailable";
+            this.picAvailable.Size = new System.Drawing.Size(23, 23);
+            this.picAvailable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvailable.TabIndex = 3;
+            this.picAvailable.TabStop = false;
+            this.picAvailable.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnChkAvai
+            // 
+            this.btnChkAvai.Location = new System.Drawing.Point(401, 92);
+            this.btnChkAvai.Name = "btnChkAvai";
+            this.btnChkAvai.Size = new System.Drawing.Size(146, 23);
+            this.btnChkAvai.TabIndex = 3;
+            this.btnChkAvai.Text = "Check Availability";
+            this.btnChkAvai.UseVisualStyleBackColor = true;
+            this.btnChkAvai.Click += new System.EventHandler(this.button1_Click);
             // 
             // boxCheckPwd
             // 
@@ -167,6 +232,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.RegisterArea.ResumeLayout(false);
             this.RegisterArea.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNotAvailable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +250,10 @@
         private Label lblUsername;
         private TextBox boxCheckPwd;
         private Label lblConfirm;
+        private Button btnChkAvai;
+        private PictureBox picAvailable;
+        private PictureBox picNotAvailable;
+        private Button btnHidePwd;
+        private Button btnShowPwd;
     }
 }

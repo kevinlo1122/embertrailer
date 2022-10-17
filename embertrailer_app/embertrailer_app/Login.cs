@@ -63,6 +63,7 @@ namespace embertrailer_app
             // Right click the .mdf file
             // Select Properties
             // Copy Connection String to acquire the accessibility of the database
+            // Paste the Connection String to new SqlConnection as shown as below
 			
             SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'", usersDB);
