@@ -42,7 +42,7 @@ namespace embertrailer_app
         private bool isAvailable()
         {
             // Variables, object declaration and initialization
-            string checkDuplicate = "SELECT * FROM USERS WHERE USERNAME='" + boxUsername.Text + "'";
+            string checkDuplicate = "SELECT * FROM USERS WHERE USERNAME='" + boxUsername.Text + "'" + "COLLATE SQL_Latin1_general_CP1_CS_AS";
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand();
             SqlDataAdapter dtAtr = new SqlDataAdapter();
