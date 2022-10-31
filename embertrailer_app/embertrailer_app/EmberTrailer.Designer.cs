@@ -38,19 +38,12 @@
             this.labelLocation = new System.Windows.Forms.Label();
             this.history = new System.Windows.Forms.Button();
             this.help = new System.Windows.Forms.Button();
-            this.water = new System.Windows.Forms.Button();
-            this.buttonDrillUp = new System.Windows.Forms.Button();
-            this.buttonDrillDown = new System.Windows.Forms.Button();
-            this.labelDrill = new System.Windows.Forms.Label();
             this.labelHumidity = new System.Windows.Forms.Label();
             this.labelHumidityValue = new System.Windows.Forms.Label();
             this.labelAirQuality = new System.Windows.Forms.Label();
             this.labelAirQualityValue = new System.Windows.Forms.Label();
             this.labelStatus = new System.Windows.Forms.Label();
             this.labelStatusValue = new System.Windows.Forms.Label();
-            this.labelProbeTemp = new System.Windows.Forms.Label();
-            this.labelProbeTempValue = new System.Windows.Forms.Label();
-            this.labelWater = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,51 +164,6 @@
             this.help.UseVisualStyleBackColor = true;
             this.help.Click += new System.EventHandler(this.help_Click);
             // 
-            // water
-            // 
-            this.water.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.water.Location = new System.Drawing.Point(444, 485);
-            this.water.Name = "water";
-            this.water.Size = new System.Drawing.Size(94, 29);
-            this.water.TabIndex = 5;
-            this.water.Text = "Start";
-            this.water.UseVisualStyleBackColor = true;
-            this.water.Click += new System.EventHandler(this.water_Click);
-            // 
-            // buttonDrillUp
-            // 
-            this.buttonDrillUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonDrillUp.Location = new System.Drawing.Point(608, 485);
-            this.buttonDrillUp.Name = "buttonDrillUp";
-            this.buttonDrillUp.Size = new System.Drawing.Size(94, 29);
-            this.buttonDrillUp.TabIndex = 6;
-            this.buttonDrillUp.Text = "Up";
-            this.buttonDrillUp.UseVisualStyleBackColor = true;
-            this.buttonDrillUp.Click += new System.EventHandler(this.buttonDrillUp_Click);
-            // 
-            // buttonDrillDown
-            // 
-            this.buttonDrillDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonDrillDown.Location = new System.Drawing.Point(608, 406);
-            this.buttonDrillDown.Name = "buttonDrillDown";
-            this.buttonDrillDown.Size = new System.Drawing.Size(94, 29);
-            this.buttonDrillDown.TabIndex = 13;
-            this.buttonDrillDown.Text = "Down";
-            this.buttonDrillDown.UseVisualStyleBackColor = true;
-            this.buttonDrillDown.Click += new System.EventHandler(this.buttonDrillDown_Click);
-            // 
-            // labelDrill
-            // 
-            this.labelDrill.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelDrill.AutoSize = true;
-            this.labelDrill.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDrill.Location = new System.Drawing.Point(636, 374);
-            this.labelDrill.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelDrill.Name = "labelDrill";
-            this.labelDrill.Size = new System.Drawing.Size(38, 20);
-            this.labelDrill.TabIndex = 14;
-            this.labelDrill.Text = "Drill";
-            // 
             // labelHumidity
             // 
             this.labelHumidity.AutoSize = true;
@@ -280,58 +228,18 @@
             this.labelStatusValue.TabIndex = 20;
             this.labelStatusValue.Text = "n/a";
             // 
-            // labelProbeTemp
-            // 
-            this.labelProbeTemp.AutoSize = true;
-            this.labelProbeTemp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelProbeTemp.Location = new System.Drawing.Point(179, 189);
-            this.labelProbeTemp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelProbeTemp.Name = "labelProbeTemp";
-            this.labelProbeTemp.Size = new System.Drawing.Size(144, 20);
-            this.labelProbeTemp.TabIndex = 21;
-            this.labelProbeTemp.Text = "Probe Temperature";
-            // 
-            // labelProbeTempValue
-            // 
-            this.labelProbeTempValue.AutoSize = true;
-            this.labelProbeTempValue.Location = new System.Drawing.Point(337, 189);
-            this.labelProbeTempValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelProbeTempValue.Name = "labelProbeTempValue";
-            this.labelProbeTempValue.Size = new System.Drawing.Size(31, 20);
-            this.labelProbeTempValue.TabIndex = 22;
-            this.labelProbeTempValue.Text = "n/a";
-            // 
-            // labelWater
-            // 
-            this.labelWater.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelWater.AutoSize = true;
-            this.labelWater.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelWater.Location = new System.Drawing.Point(467, 374);
-            this.labelWater.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelWater.Name = "labelWater";
-            this.labelWater.Size = new System.Drawing.Size(51, 20);
-            this.labelWater.TabIndex = 23;
-            this.labelWater.Text = "Water";
-            // 
             // EmberTrailer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(905, 515);
-            this.Controls.Add(this.labelWater);
-            this.Controls.Add(this.labelProbeTempValue);
-            this.Controls.Add(this.labelProbeTemp);
             this.Controls.Add(this.labelStatusValue);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelAirQualityValue);
             this.Controls.Add(this.labelAirQuality);
             this.Controls.Add(this.labelHumidityValue);
             this.Controls.Add(this.labelHumidity);
-            this.Controls.Add(this.labelDrill);
-            this.Controls.Add(this.buttonDrillDown);
-            this.Controls.Add(this.buttonDrillUp);
-            this.Controls.Add(this.water);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EmberTrailer";
@@ -352,21 +260,14 @@
         private Label labelInternalTemp;
         private Label labelBattery;
         private Label labelConnectivity;
-        private Button water;
-        private Button buttonDrillUp;
         private Label labelLon;
         private Label labelLat;
         private Label labelTempValue;
-        private Button buttonDrillDown;
-        private Label labelDrill;
         private Label labelHumidity;
         private Label labelHumidityValue;
         private Label labelAirQuality;
         private Label labelAirQualityValue;
         private Label labelStatus;
         private Label labelStatusValue;
-        private Label labelProbeTemp;
-        private Label labelProbeTempValue;
-        private Label labelWater;
     }
 }

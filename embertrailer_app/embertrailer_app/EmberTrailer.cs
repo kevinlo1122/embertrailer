@@ -13,11 +13,7 @@ namespace embertrailer_app
         // 3: Humidity
         // 4: Air Quality
         // 5: Hottest pixel detected by thermal camera
-        // 6: Probe temperature
-        string[] dataArray = new string[7];
-
-        bool IsWaterButtonClicked = false;
-        bool IsDrillButtonClicked = false;
+        string[] dataArray = new string[6];
 
         public EmberTrailer()
         {
@@ -75,33 +71,6 @@ namespace embertrailer_app
                 else
                     LabelUpdate(labelStatusValue, "OK");
 
-                if (dataArray[6] == "None")
-                    LabelUpdate(labelProbeTempValue, "n/a");
-                else
-                    LabelUpdate(labelProbeTempValue, dataArray[6]);
-
-                // activate the correct severity level
-                /*switch(dataArray[#])
-                {
-                    case 5:
-                        // severity level 5
-                        // TODO: set inactiveSeverity5 (grey circle) invisible
-                        break;
-                    case 4:
-                        // severity level 4
-                        break;
-                    case 3:
-                        // severity level 3
-                        break;
-                    case 2:
-                        // severity level 2
-                        break;
-                    case 1:
-                        // severity level 1
-                        break;
-                }*/
-
-
                 Serial.msgToArduino.Add("REPLY");
             }
         }
@@ -117,22 +86,6 @@ namespace embertrailer_app
             {
                 lb.Text = msg;
             }
-        }
-
-        private void water_Click(object sender, EventArgs e)
-        {
-            IsWaterButtonClicked = !IsWaterButtonClicked;
-            Serial.msgToArduino.Add("s");
-        }
-
-        private void buttonDrillUp_Click(object sender, EventArgs e)
-        {
-            Serial.msgToArduino.Add("lu");
-        }
-
-        private void buttonDrillDown_Click(object sender, EventArgs e)
-        {
-            Serial.msgToArduino.Add("ld");
         }
 
         private void help_Click(object sender, EventArgs e)
