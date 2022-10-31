@@ -65,7 +65,7 @@ namespace embertrailer_app
             // Copy Connection String to acquire the accessibility of the database
             // Paste the Connection String to new SqlConnection as shown as below
 			
-            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\songx\OneDrive\Documents\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' COLLATE SQL_Latin1_general_CP1_CS_AS AND PASSWORD = '" + boxPassword.Text + "'" + "COLLATE SQL_Latin1_general_CP1_CS_AS", usersDB);
             //SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME LIKE '" + boxUsername.Text + "' AND PASSWORD LIKE '" + boxPassword.Text + "'", usersDB);
             //SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'" + "COLLATE latin1_bin", usersDB);
