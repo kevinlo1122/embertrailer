@@ -1,3 +1,8 @@
+using System.Windows.Forms;
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.WinForms;
+using static System.Net.WebRequestMethods;
+
 namespace embertrailer_app
 {
     public partial class EmberTrailer : Form
@@ -17,6 +22,9 @@ namespace embertrailer_app
 
         public EmberTrailer()
         {
+            //webView21.Source = ""
+            InitializeComponent();
+            //initMap();  
             InitializeComponent();
             serialPort = new Serial();
             serialPort.Connect();
@@ -107,5 +115,24 @@ namespace embertrailer_app
         {
 
         }
+
+        private void labelStatusValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webView21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private async void initMap()
+        //{
+        //    //string url = "https://www.google.com/maps/";
+        //    string url = "https://www.google.com/";
+
+        //    await webView21.EnsureCoreWebView2Async();
+        //    webView21.CoreWebView2.Navigate(url);
+        //}
     }
 }

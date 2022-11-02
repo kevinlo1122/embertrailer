@@ -13,6 +13,18 @@ namespace embertrailer_app
 {
     public partial class Login : Form
     {
+        // *** Cautious ***//
+        // Please read ALL instructions below before running the program
+
+        // Create a connection between the backend program and the database 
+        // The connection path must be modified for every time of program running
+
+        // Ctrl + Alt + S to open the Server Explorer
+        // Right click the .mdf file
+        // Select Properties
+        // Copy Connection String to acquire the accessibility of the database
+        // Paste the Connection String to new SqlConnection as shown as below
+        string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\UsersInfo.mdf;Integrated Security=True;Connect Timeout=30;";
         private object sqlConnection;
 
         public Login()
@@ -52,20 +64,8 @@ namespace embertrailer_app
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-        {
-			// *** Cautious ***//
-            // Please read ALL instructions below before running the program
-
-            // Create a connection between the backend program and the database 
-            // The connection path must be modified for every time of program running
-            
-            // Ctrl + Alt + S to open the Server Explorer
-            // Right click the .mdf file
-            // Select Properties
-            // Copy Connection String to acquire the accessibility of the database
-            // Paste the Connection String to new SqlConnection as shown as below
-			
-            SqlConnection usersDB = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\songx\OneDrive\Documents\AccountInfo.mdf;Integrated Security=True;Connect Timeout=30;");
+        {			
+            SqlConnection usersDB = new SqlConnection(connStr);
             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' COLLATE SQL_Latin1_general_CP1_CS_AS AND PASSWORD = '" + boxPassword.Text + "'" + "COLLATE SQL_Latin1_general_CP1_CS_AS", usersDB);
             //SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS WHERE USERNAME LIKE '" + boxUsername.Text + "' AND PASSWORD LIKE '" + boxPassword.Text + "'", usersDB);
             //SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM USERS WHERE USERNAME='" + boxUsername.Text + "' AND PASSWORD = '" + boxPassword.Text + "'" + "COLLATE latin1_bin", usersDB);
