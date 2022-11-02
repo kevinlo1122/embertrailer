@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "e0Xwi+KsnShVAI3iGBq7HRyoMuCfvCO8An5OIiwPItJWn5v2of9wKcPL5y7aheoSwReerzaMYmXcY8t+5Hj7yw==",
+  "dgSpecHash": "xeg/9QD5nMZ/xmcvbwYxG2s8POH9ftY+l62eVcaJLVCAoVoUbQGcjS7Lms2kbAs8rPCuzdDO7YK5Qa2ewywxAQ==",
   "success": true,
   "projectFilePath": "D:\\ProgrammingScripts\\GitRepository\\NatureCooler3\\embertrailer\\embertrailer_app\\embertrailer_app\\embertrailer_app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\songx\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\songx\\.nuget\\packages\\microsoft.web.webview2\\1.0.1418.22\\microsoft.web.webview2.1.0.1418.22.nupkg.sha512",
     "C:\\Users\\songx\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\songx\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "C:\\Users\\songx\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
