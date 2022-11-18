@@ -41,46 +41,46 @@ namespace embertrailer_app
         // Take messages from the queue, will block if empty
         private void LabelUpdateThread()
         {
-            foreach (var msg in Serial.msgFromArduino.GetConsumingEnumerable())
-            {
-                dataArray = msg.Split('/');
+            //foreach (var msg in Serial.msgFromArduino.GetConsumingEnumerable())
+            //{
+            //    dataArray = msg.Split('/');
 
-                string tempLat = dataArray[0];
-                string tempLon = dataArray[1];
-                if (tempLat == "None")
-                    LabelUpdate(labelLat, "n/a");
-                else
-                    LabelUpdate(labelLat, tempLat);
+            //    string tempLat = dataArray[0];
+            //    string tempLon = dataArray[1];
+            //    if (tempLat == "None")
+            //        LabelUpdate(labelLat, "n/a");
+            //    else
+            //        LabelUpdate(labelLat, tempLat);
 
-                if (tempLon == "None")
-                    LabelUpdate(labelLon, "n/a");
-                else
-                    LabelUpdate(labelLon, tempLon);
+            //    if (tempLon == "None")
+            //        LabelUpdate(labelLon, "n/a");
+            //    else
+            //        LabelUpdate(labelLon, tempLon);
 
-                if (dataArray[2] == "None")
-                    LabelUpdate(labelTempValue, "n/a");
-                else
-                    LabelUpdate(labelTempValue, dataArray[2]);
+            //    if (dataArray[2] == "None")
+            //        LabelUpdate(labelTempValue, "n/a");
+            //    else
+            //        LabelUpdate(labelTempValue, dataArray[2]);
 
-                if (dataArray[3] == "None")
-                    LabelUpdate(labelHumidityValue, "n/a");
-                else
-                    LabelUpdate(labelHumidityValue, dataArray[3]);
+            //    if (dataArray[3] == "None")
+            //        LabelUpdate(labelHumidityValue, "n/a");
+            //    else
+            //        LabelUpdate(labelHumidityValue, dataArray[3]);
 
-                if (dataArray[4] == "None")
-                    LabelUpdate(labelAirQualityValue, "n/a");
-                else
-                    LabelUpdate(labelAirQualityValue, dataArray[4]);
+            //    if (dataArray[4] == "None")
+            //        LabelUpdate(labelAirQualityValue, "n/a");
+            //    else
+            //        LabelUpdate(labelAirQualityValue, dataArray[4]);
 
-                // check if hotspot value is >=40
-                double hotspotTemp = Convert.ToDouble(dataArray[5]);
-                if (hotspotTemp >= 40)
-                    LabelUpdate(labelStatusValue, "WARNING");
-                else
-                    LabelUpdate(labelStatusValue, "OK");
+            //    // check if hotspot value is >=40
+            //    double hotspotTemp = Convert.ToDouble(dataArray[5]);
+            //    if (hotspotTemp >= 40)
+            //        LabelUpdate(labelStatusValue, "WARNING");
+            //    else
+            //        LabelUpdate(labelStatusValue, "OK");
 
-                Serial.msgToArduino.Add("REPLY");
-            }
+            //    Serial.msgToArduino.Add("REPLY");
+            //}
         }
 
         // Update the text shown by the label; use this code pattern since accessing the Control from a different thread
