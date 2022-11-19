@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.labelTempValue = new System.Windows.Forms.Label();
             this.labelLon = new System.Windows.Forms.Label();
             this.labelLat = new System.Windows.Forms.Label();
@@ -37,14 +39,16 @@
             this.labelInternalTemp = new System.Windows.Forms.Label();
             this.labelLocation = new System.Windows.Forms.Label();
             this.history = new System.Windows.Forms.Button();
-            this.help = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.logTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.labelTempValue);
             this.panel1.Controls.Add(this.labelLon);
             this.panel1.Controls.Add(this.labelLat);
@@ -53,12 +57,22 @@
             this.panel1.Controls.Add(this.labelInternalTemp);
             this.panel1.Controls.Add(this.labelLocation);
             this.panel1.Controls.Add(this.history);
-            this.panel1.Controls.Add(this.help);
+            this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1479, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(425, 1041);
             this.panel1.TabIndex = 2;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(171, 446);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(82, 22);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // labelTempValue
             // 
@@ -149,17 +163,17 @@
             this.history.UseVisualStyleBackColor = true;
             this.history.Click += new System.EventHandler(this.history_Click);
             // 
-            // help
+            // btnHelp
             // 
-            this.help.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.help.Location = new System.Drawing.Point(171, 405);
-            this.help.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(82, 22);
-            this.help.TabIndex = 0;
-            this.help.Text = "Help";
-            this.help.UseVisualStyleBackColor = true;
-            this.help.Click += new System.EventHandler(this.help_Click);
+            this.btnHelp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnHelp.Location = new System.Drawing.Point(171, 405);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(82, 22);
+            this.btnHelp.TabIndex = 0;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.help_Click);
             // 
             // webView21
             // 
@@ -175,6 +189,11 @@
             this.webView21.TabIndex = 21;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
+            // 
+            // logTimer
+            // 
+            this.logTimer.Interval = 10000;
+            this.logTimer.Tick += new System.EventHandler(this.logTimer_Tick);
             // 
             // EmberTrailer
             // 
@@ -196,7 +215,7 @@
 
         #endregion
         private Panel panel1;
-        private Button help;
+        private Button btnHelp;
         private Button history;
         private Label labelLocation;
         private Label labelInternalTemp;
@@ -206,5 +225,7 @@
         private Label labelLat;
         private Label labelTempValue;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private Button btnExit;
+        private System.Windows.Forms.Timer logTimer;
     }
 }

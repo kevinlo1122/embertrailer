@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using System.IO;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
 using static System.Net.WebRequestMethods;
@@ -7,6 +8,7 @@ namespace embertrailer_app
 {
     public partial class EmberTrailer : Form
     {
+        int serialNum = 1;
         Serial serialPort;
         Thread receiveThread;
         Thread sendThread;
@@ -20,12 +22,39 @@ namespace embertrailer_app
         // 5: Hottest pixel detected by thermal camera
         string[] dataArray = new string[6];
 
+        StreamWriter log = new StreamWriter(Application.StartupPath + "\\LogRecords\\" +
+              DateTime.Now.ToString("ddMMyyyyhhmmss") + ".txt");
+
+        void dataLogging(int serialNum)
+        {
+            double itnlTemp, lon, lat;
+
+            // Internal temperature, longitude and latitude simulation,
+            // this section of instructions must be changed when synthesizing with the practical sensors
+            var rand = new Random();
+            int min = -10, max = 90;
+            itnlTemp = rand.Next(min, max);
+            lon = -120.33;
+            lat = 49.66;
+
+            string timeStamp = DateTime.Now.ToString("MM-dd-yyyy HH:mm:ss");
+            log.WriteLine(serialNum.ToString() + ": Internal Temperature: " + itnlTemp.ToString() + ", Latitude: " + lat.ToString() +
+                ", Longitude: " + lon.ToString() + ", Date Time: " + timeStamp); ;
+        }
+
+        private string ToString(double itnlTemp)
+        {
+            throw new NotImplementedException();
+        }
+
         public EmberTrailer()
         {
             //webView21.Source = ""
             InitializeComponent();
             //initMap();  
             InitializeComponent();
+            logTimer.Enabled = true;
+            logTimer.Start();
             serialPort = new Serial();
             serialPort.Connect();
 
@@ -124,6 +153,22 @@ namespace embertrailer_app
         private void webView21_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            logTimer.Enabled = false;
+            logTimer.Stop();
+            log.Close();
+            this.Hide();
+            Login loginPage = new Login();
+            loginPage.Show();
+        }
+
+        private void logTimer_Tick(object sender, EventArgs e)
+        {
+            dataLogging(serialNum);
+            serialNum++;       
         }
 
         //private async void initMap()
