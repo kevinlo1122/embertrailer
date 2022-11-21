@@ -273,3 +273,4 @@ D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\
 D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
 D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\ProgrammingScripts\GitRepository\NatureCooler3\embertrailer\embertrailer_app\embertrailer_app\obj\Debug\net6.0-windows\embertrailer_app.History.resources

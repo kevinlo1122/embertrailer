@@ -132,7 +132,12 @@ namespace embertrailer_app
 
         private void history_Click(object sender, EventArgs e)
         {
-
+            logTimer.Enabled = false;
+            logTimer.Stop();
+            log.Close();
+            this.Hide();
+            History historyPage = new History();
+            historyPage.Show();
         }
 
         private void EmberTrailer_FormClosing(object sender, EventArgs e)
